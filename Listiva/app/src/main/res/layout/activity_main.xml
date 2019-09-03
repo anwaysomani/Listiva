@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
@@ -12,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/absoluteBlack"
+        android:layout_gravity="bottom|center"
         app:tabBackground="@color/absoluteBlack"
         app:tabTextColor="@color/absoluteWhite"
         />
