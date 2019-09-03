@@ -7,10 +7,18 @@
     tools:context=".ShoppingList">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:text="@string/appbar_scrolling_view_behavior"
+        android:text="@string/featureName1"
+        android:padding="10dp"
+        android:background="@color/absoluteWhite"
+        android:textColor="@color/absoluteBlack"
+        android:fontFamily="Cursive"
+        android:layout_marginTop="5dp"
+        android:textAlignment="viewEnd"
+        android:paddingEnd="35dp"
         />
 
 </RelativeLayout>

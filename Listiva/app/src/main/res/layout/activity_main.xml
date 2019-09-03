@@ -15,7 +15,7 @@
         android:background="@color/absoluteWhite"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:tabBackground="@color/absoluteBlack"
+        app:tabBackground="@color/darkBlue"
         app:tabIndicatorColor="@color/absoluteWhite"
         app:tabSelectedTextColor="@color/sweetYellow"
         app:tabTextColor="@color/absoluteWhite" />

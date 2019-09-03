@@ -8,4 +8,6 @@
     <color name="absoluteBlack">#000</color>
     <color name="absoluteWhite">#FFF</color>
     <color name="sweetYellow">#EEEA06</color>
+    <color name="runningBlue">#AD1197F1</color>
+    <color name="darkBlue">#F2061EF3</color>
 </resources>

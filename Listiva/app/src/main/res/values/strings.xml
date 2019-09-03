@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Listiva</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Custom -->
+    <string name="featureName1">Shopping List</string>
+    <string name="featureName2">Add Multiple Items</string>
 </resources>
