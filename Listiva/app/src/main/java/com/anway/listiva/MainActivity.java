@@ -10,29 +10,28 @@ import android.view.View;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity implements AddMultipleItems.OnFragmentInteractionListener, ShoppingList.OnFragmentInteractionListener {
-
-    ViewPager vp;
+public class MainActivity extends AppCompatActivity implements
+        AddMultipleItems.OnFragmentInteractionListener, ShoppingList.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TabLayout tb = (TabLayout) findViewById(R.id.appfeatures);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.appfeatures);
 
-        tb.addTab(tb.newTab().setText("Shopping List"));
-        tb.addTab(tb.newTab().setText("Add Multiple"));
+        tabLayout.addTab(tabLayout.newTab().setText("Shopping List"));
+        tabLayout.addTab(tabLayout.newTab().setText("Add Multiple Items"));
 
-        final ViewPager viewpager =(ViewPager) findViewById(R.id.viewpager1);
-        final FeatureAdapter fadapter = new FeatureAdapter(getSupportFragmentManager(), tb.getTabCount());
-        viewpager.setAdapter(fadapter);
-        viewpager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tb));
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager1);
+        final PagerAdapter adapter = new FeatureAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
+        viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
-        tb.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                viewpager.setCurrentItem(tab.getPosition());
+                viewPager.setCurrentItem(tab.getPosition());
             }
 
             @Override
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements AddMultipleItems.
             @Override
             public void onTabReselected(TabLayout.Tab tab) { }
         });
-
     }
 
     @Override

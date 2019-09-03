@@ -7,4 +7,5 @@
     <!-- Custom -->
     <color name="absoluteBlack">#000</color>
     <color name="absoluteWhite">#FFF</color>
+    <color name="sweetYellow">#EEEA06</color>
 </resources>
